@@ -1,0 +1,30 @@
+{
+  "name": "MyApp",
+  "reason": {"react-jsx": 3},
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+    "gentypeconfig": {
+    "language": "typescript",
+    "module": "es6",
+    "importPath": "relative",
+    "shims": {
+      "ReasonReact": "React",
+      "ReactNative": "ReactNative",
+      "ApolloClient": "ApolloClient"
+    },
+    "debug": {
+      "all": false,
+      "basic": false
+    }
+  },
+  "bs-dependencies": ["@rescript/react", "rescript-react-native"]
+}
